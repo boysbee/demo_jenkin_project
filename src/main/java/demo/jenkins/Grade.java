@@ -3,20 +3,20 @@ package demo.jenkins;
 public class Grade {
 
 	public String convert(int score) {
-		String grade = "F";
+		
 		if(score >= 80) {
-			grade = "A";
+			return "A";
 		}
 		if(score >= 70) {
-			grade = "B";
+			return "B";
 		}
 		if(score >= 60) {
-			grade = "C";
+			return "C";
 		}
 		if(score >= 50){
-			grade = "D";
+			return "D";
 		}
-		return grade;
+		return "F";
 		//TODO
 		//FIXME
 	}
