@@ -9,6 +9,11 @@ public class GradeTest {
 	Grade grade = new Grade();
 	
 	@Test
+	public void scroreNegativeValueShouldBeFail(){
+		assertEquals("F", grade.convert(-1));
+	}
+
+	@Test
 	public void scrore0ShouldGetGradeF() {
 		assertEquals("F", grade.convert(0));
 	}
