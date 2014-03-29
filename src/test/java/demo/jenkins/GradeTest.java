@@ -10,7 +10,7 @@ public class GradeTest {
 	
 	@Test
 	public void scroreNegativeValueShouldBeFail(){
-		assertEquals("F", grade.convert(-1));
+		fail("fail test");
 	}
 
 	@Test
