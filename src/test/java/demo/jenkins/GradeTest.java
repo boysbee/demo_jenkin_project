@@ -8,6 +8,12 @@ public class GradeTest {
 
 	Grade grade = new Grade();
 
+
+	@Test
+	public void scroreMustFail(){
+		fail("must fail");
+	}
+	
 	@Test
 	public void scroreNegativeValueShouldGetF() {
 		assertEquals("F", grade.convert(-1));
