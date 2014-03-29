@@ -14,6 +14,11 @@ public class GradeTest {
 	}
 
 	@Test
+	public void scroreNegativeValueMustFail(){
+		assertEquals("S" , grade.convert(10));
+	}
+
+	@Test
 	public void scrore0ShouldGetGradeF() {
 		assertEquals("F", grade.convert(0));
 	}
